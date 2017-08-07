@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="background">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="title">
+                        <h1>Megslist</h1>
+                        <h4>Craiglist's ugly sister</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="formstuff">
+                        <h3>Homes</h3>
+                        <form onsubmit="app.controllers.homeController.addHome(event)">
+                            <div class="form-group">
+                                <input type="text" placeholder="Description..." name="description" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Square Footage..." name="sqft">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Price..." name="price-tag">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Image..." name="img">
+                            </div>
+                            <button type="submit">Add Home</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="formstuff">
+                        <h3>Automobiles</h3>
+                        <form onsubmit="app.controllers.autoController.addAuto(event)">
+                            <div class="form-group">
+                                <input type="text" placeholder="Description..." name="description" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Model Year..." name="year">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Price..." name="price-tag">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Image..." name="img">
+                            </div>
+                            <button type="submit">Add Auto</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="formstuff">
+                        <h3>Jobs</h3>
+                        <form onsubmit="app.controllers.jobController.addJob(event)">
+                            <div class="form-group">
+                                <input type="text" placeholder="Job Title..." name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Description..." name="description">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Salary..." name="price-tag">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Image..." name="img">
+                            </div>
+                            <button type="submit">Add Job</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="results">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="app/components/home/home-service.js"></script>
+    <script src="app/components/auto/auto-service.js"></script>
+    <script src="app/components/job/job-service.js"></script>
+    <script src="app/components/home/home-controller.js"></script>
+    <script src="app/components/auto/auto-controller.js"></script>
+    <script src="app/components/job/job-controller.js"></script>
+    <script src="app/main.js"></script>
+</body>
+
+</html>

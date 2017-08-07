@@ -1,0 +1,25 @@
+.listing-image {
+    height: 200px;
+    width: 200px;
+}
+
+.card {
+    background-color: darkgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.formstuff {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.background {
+    background-color: blanchedalmond;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
